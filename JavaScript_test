@@ -46,7 +46,7 @@ year=1991;
 console.log(typeof year);
 
 console.log(typeof null);
-*/
+
 
 let age = 30;
 age = 31;
@@ -61,3 +61,53 @@ console.log(job);
 
 lastName = 'Costa';
 console.log(lastName);
+
+//Math Operators
+const jinNian = 2023;
+const ageAna = jinNian - 1996;
+const ageDimi = jinNian - 2003;
+console.log(ageAna, ageDimi);
+
+console.log(ageAna * 2, ageDimi / 5, 2 ** 3);
+// 2**3 é 2^3 = 2*2*2 = 8
+
+const firstName = "Cicília";
+const lastName = "Costa";
+console.log(firstName + ' ' + lastName);
+
+// Assignment Operators
+let x = 10 + 5;
+x += 10; // x = x + 10 = 25
+x *= 4; //x = x*4 = 100
+x++; // x = x + 1 = 101
+x--; // x = x - 1 = 100
+
+console.log(x);
+
+
+//Comparison operators
+
+console.log(ageAna > ageDimi);
+// >; <; >=; <=;
+console.log(ageDimi < 21);
+console.log(ageAna >= 20);
+console.log(ageDimi <= 50);
+console.log(ageDimi >= 50);
+
+console.log(jinNian - 1996 > jinNian - 2003);
+*/
+
+const jinNian = 2023;
+const ageAna = jinNian - 1996;
+const ageDimi = jinNian - 2003;
+
+console.log(jinNian - 1996 > jinNian - 2003);
+
+let x, y;
+x = y = 25 - 10 - 5; //= x = y = 10
+console.log(x, y);
+
+const averageAge = (ageAna + ageDimi) / 2;
+
+
+console.log(ageAna, ageDimi, averageAge);
