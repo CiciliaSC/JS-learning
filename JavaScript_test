@@ -1,4 +1,3 @@
-/*
 let Js = 'amazing';
 console.log(40 + 8 + 23 - 10);
 console.log("jonas");
@@ -95,7 +94,7 @@ console.log(ageDimi <= 50);
 console.log(ageDimi >= 50);
 
 console.log(jinNian - 1996 > jinNian - 2003);
-*/
+
 
 const jinNian = 2023;
 const ageAna = jinNian - 1996;
