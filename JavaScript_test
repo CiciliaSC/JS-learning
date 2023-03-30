@@ -110,3 +110,156 @@ const averageAge = (ageAna + ageDimi) / 2;
 
 
 console.log(ageAna, ageDimi, averageAge);
+
+
+
+const primeiroNome = 'Cicilia';
+const ocupacao = 'estudate';
+const anoNasc = 2003;
+const ano = 2025;
+
+const meCici = "Eu sou " + primeiroNome + " tenho " + (ano - anoNasc) + " de idade, " + ocupacao + "!";
+console.log(meCici);
+
+
+const meCici1 =  `Eu sou ${primeiroNome}, tenho ${ano - anoNasc} de idade, ${ocupacao}!`;
+
+console.log(meCici1);
+
+console.log(`simples string`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String with
+multiple
+lines`);
+
+
+const age = 19;
+
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗');
+} else {
+    const para18 = 18 - age;
+    console.log(`Sarah is too young! Wait another ${para18} years :D`);
+}
+
+const nascimento = 1991;
+let seculo;
+if (nascimento <= 2000) {
+    seculo = "XX";
+} else {
+    seculo = "XXI";
+}
+console.log(`Você nasceu no século ${seculo}`);
+
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof Nan);
+
+console.log(String(23), 23);
+
+
+//Type coercion
+console.log('I am ' + 23 + 'years old');
+console.log('23' - '10' - 3);
+console.log('23' + '10' + 3);
+console.log('23' * '2');
+
+
+// 5 falsy values: 0; ''; undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("jonas"));
+console.log(Boolean({}));
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all😘");
+} else {
+    console.log('You should get a job!😁');
+}
+
+let height;
+if (height) {
+    console.log('YAY! Height is defined');
+} else {
+    console.log('Height is UNDEFINED');
+}
+*/
+
+//Equality Operators: == vs. ===
+/*
+let age = "18";
+if (age === 18) console.log('restrito');
+if (age == 18) console.log('flexivel');
+console.log(typeof (18));
+
+age === 19;
+console.log(age === 19);
+
+console.log(typeof age);
+console.log(typeof (age === 18));
+
+
+const justNumber = Number(prompt("What's your favourite number?"));
+console.log(justNumber);
+console.log(typeof justNumber);
+
+if (justNumber) {
+    console.log('Ok no problem, you entered a number');
+} else {
+    console.log('Sorry,but it is not a Number, try again!');
+}
+
+console.log(Number());
+
+
+const amigo = prompt("What's your best friend name?");
+
+if (amigo === 'Ana') {
+    console.log("Ana! coll, She's my best friend too!");
+} else if (amigo === 'Pedro') {
+    console.log("Pedro! He is a coll");
+} else if (amigo ==="Gabriel"){
+    console.log("Gabriel? realy? ok!");
+} else if (amigo === "Rafael"){
+    console.log ("OK!, not bad! he is a good boy!");
+} else {
+    console.log ("I don't know, but your best friend seems nice");
+}
+
+if(amigo !== 'Ana') console.log("Why? Do you don't like Ana?");
+
+let variableNumber = 85;
+console.log(variableNumber != "85"); 
+ // Diferente flexivel (adapata ao tipo de varivel) 85 é "parecido então é igual a" "85" - retorno false
+ console.log(variableNumber !== "85");
+// Diferente restritivel (fiel a variavel declarada)  85 é diferente de "85" - retorno true
+*/
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision); //AND
+console.log(hasDriversLicense || hasGoodVision); //OR
+console.log(!hasDriversLicense); //NO
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+const isTired = false; //C
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (shouldDrive && !isTired) {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('Someone else should drive...');
+}
