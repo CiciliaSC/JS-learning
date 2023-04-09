@@ -1,0 +1,96 @@
+//JavaScript - part 2
+'use strict';
+
+let habilitacao = false;
+const aprovado = true;
+
+if (aprovado) habilitacao = true;
+if (habilitacao) console.log('Eu posso dirigir!');
+
+const interface = 'oie';
+const private = 123;
+
+
+function registrador(name) {
+    let apresentar = `Meu nome é ${name}`;
+    return apresentar;
+}
+console.log(typeof registrador());
+const amiga = registrador('Julia');
+console.log(amiga);
+registrador();
+console.log(registrador('Rafael'));
+
+
+
+
+function fazendoSuco(maçãs, laranjas) {
+    const suco = `Suco com ${maçãs} maçãs e ${laranjas} laranjas.`;
+    return suco;
+}
+
+const sucoDeMaçã = fazendoSuco(5, 0);
+console.log(sucoDeMaçã);
+
+const sucoDeLaranja = fazendoSuco(0, 5);
+console.log(sucoDeLaranja);
+
+console.log(typeof sucoDeLaranja);
+
+function numeros(primeiro, segundo) {
+    let soma = primeiro + segundo;
+    let multiplicação = primeiro * segundo
+    let atributo = soma - multiplicação;
+    return atributo
+}
+console.log(numeros(-3, 10));
+
+console.log(typeof numeros());
+
+function exemplo() {
+
+}
+
+console.log(typeof exemplo());
+
+
+//declarar - função
+function calcAge1(birthday) {
+    return 2023 - birthday;
+}
+
+const age1 = calcAge1(2003);
+
+//expressar - função
+const calcAge2 = function (birthday) {
+    return 2023 - birthday;
+}
+
+const age2 = calcAge2(2003);
+
+console.log(age1, age2);
+
+//Arrow Function
+
+const calcAge3 = birthday => 2023 - birthday;
+const age3 = calcAge3(2003);
+console.log(age3);
+
+const idadeAposentadoria = (birthYear, firstName) => {
+    const age = 2023 - birthYear;
+    const aposentadoria = 65 - age;
+    return `${firstName} para aposentar restam ${aposentadoria} anos!`;
+}
+
+console.log(idadeAposentadoria(2003, "Cicília"));
+console.log(idadeAposentadoria(2005, "Alexandre"));
+
+
+
+
+
+
+
+
+
+
