@@ -85,7 +85,39 @@ const idadeAposentadoria = (birthYear, firstName) => {
 console.log(idadeAposentadoria(2003, "Cicília"));
 console.log(idadeAposentadoria(2005, "Alexandre"));
 
+const cortadordeFruta = function (fruta) {
+    return fruta * 4;
+}
 
+const sucos = function (maçãs, laranjas) {
+    const cortaMaçãs = cortadordeFruta(maçãs);
+    const cortaLaranjas = cortadordeFruta(laranjas);
+
+    const suquinho = `Suco com ${cortaMaçãs} pedaços de maçã e ${cortaLaranjas} pedaços de laranja.`;
+    return suquinho;
+}
+
+console.log(sucos(3, 5));
+
+*/
+const calcIdade = function (birthday) {
+    return 2023 - birthday;
+}
+const idadeAposentadoria = function (birthYear, firstName) {
+    const idade = calcIdade(birthYear);
+    const aposentadoria = 65 - idade;
+
+    if (aposentadoria > 0) {
+        return `${firstName} para aposentar restam ${aposentadoria} anos!`;
+    } else {
+        return `Sr(a): ${firstName}, você já está aposentado(a)!`;
+    }
+}
+
+
+console.log(idadeAposentadoria(2003, "Cicília"));
+console.log(idadeAposentadoria(2005, "Alexandre"));
+console.log(idadeAposentadoria(1954, "Fernanda"));
 
 
 
