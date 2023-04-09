@@ -194,10 +194,10 @@ if (height) {
 } else {
     console.log('Height is UNDEFINED');
 }
-*/
+
 
 //Equality Operators: == vs. ===
-/*
+
 let age = "18";
 if (age === 18) console.log('restrito');
 if (age == 18) console.log('flexivel');
@@ -263,3 +263,65 @@ if (shouldDrive && !isTired) {
 } else {
     console.log('Someone else should drive...');
 }
+
+
+const day = 'Sabado'
+switch (day) {
+    case 'Segunda': // day ==='Segunda'
+        console.log('trabalhar');
+        console.log("estudar");
+        break
+    case 'Terça':
+        console.log('trabalhar e estudar');
+        console.log('dormir');
+        break
+    case 'Quarta':
+        console.log('ir a academia');
+        break
+    case 'Quinta':
+    case 'Sexta':
+        console.log('estudar e trabalhar');
+        break
+    case 'Sabado':
+    case 'Domingo':
+        console.log('dormir e estudar');
+        break
+    default:
+        console.log('Dia inválido');
+}
+
+
+if (day === 'Segunda') {
+    console.log('trabalhar');
+    console.log("estudar");
+} else if (day === "Terça") {
+    console.log('trabalhar e estudar');
+    console.log('dormir');
+} else if (day === 'Quarta') {
+    console.log('ir a academia');
+} else if (day === 'Quinta' || day === 'Sexta') {
+    console.log('estudar e trabalhar');
+} else if (day === 'Sabado' || day === 'Domingo') {
+    console.log('dormir e estudar');
+} else {
+    console.log('Dia inválido');
+}
+
+
+const age = 12;
+age >= 18 ? console.log('I like to drink Wine🍷') :
+    console.log('I like to drink Water💧');
+
+const drink = age >= 18 ? 'Wine🍷' : 'Water💧';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'Wine🍷';
+} else {
+    drink2 = 'Water💧'
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine🍷' : 'water💧'}`);
